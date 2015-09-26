@@ -1,0 +1,175 @@
+2004-06-11 16:43  scott
+
+	* libcoyotl/Makefile.am: Removed dependancy on fixed.h
+
+2004-06-11 16:42  scott
+
+	* mkinstalldirs: Removed spurious file from CVS
+
+2004-06-11 15:25  scott
+
+	* libcoyotl/fixed.h: Removed; fixed-point math is no faster than
+	  floating-point on modern systems
+
+2004-06-11 15:24  scott
+
+	* libcoyotl/fixed.h: Ignore this; file to be removed
+
+2004-05-30 17:13  scott
+
+	* test/: Makefile.am, test_xmlparser.cpp: Removed prototype xml
+	  parser test
+
+2004-05-30 17:12  scott
+
+	* libcoyotl/: Makefile.am, xmlparser.cpp, xmlparser.h: Removed
+	  prototype xml prser; like expat enough not to write one of my own
+
+2004-05-30 17:12  scott
+
+	* configure.ac, install-sh, mkinstalldirs, reconf: Improved
+	  configuration to avoid errors with various versions of autoconf
+
+2004-05-30 16:38  scott
+
+	* configure.ac: Updated for version 3.0.2
+
+2004-05-28 09:15  scott
+
+	* libcoyotl/: command_line.cpp, command_line.h: Added set of
+	  boolean options to constructor and parsing
+
+2004-04-24 09:52  scott
+
+	* test/test_xmlparser.cpp: Added xmlparser test
+
+2004-04-24 09:52  scott
+
+	* test/: Makefile.am, test_prng.cpp: Added build of xmlparser test
+
+2004-04-24 09:50  scott
+
+	* libcoyotl/: Makefile.am, xmlparser.cpp, xmlparser.h: Added
+	  initial version of simple xmlparser
+
+2004-03-19 10:19  scott
+
+	* config.guess, config.sub: Removed spurious files from CVS
+
+2004-03-19 10:17  scott
+
+	* config.guess, config.sub: These files shouldn't be in CVS!
+	  Arrrggghhh!
+
+2004-03-19 10:09  scott
+
+	* configure.ac: Updated to version 3.0.1
+
+2004-03-19 10:02  scott
+
+	* reconf: Remove old ltmain.sh and libtool links before
+	  reconfiguring
+
+2004-03-19 09:59  scott
+
+	* ltmain.sh: Removed spurious ltmain.sh
+
+2004-03-19 09:56  scott
+
+	* libcoyotl/Makefile.am: Removed explicit CXXFLAGS
+
+2004-03-19 09:56  scott
+
+	* README, ltmain.sh, reconf: Invoke libtoolize for reconfigure
+
+2004-03-17 19:08  scott
+
+	* test/test_prng.cpp: Re-enabled range check test
+
+2004-03-17 17:00  scott
+
+	* test/test_prng.cpp: Re-enabled all tests
+
+2004-03-17 17:00  scott
+
+	* missing: Added symbolic link
+
+2004-02-11 16:59  scott
+
+	* libcoyotl/: array.h, cmwc4096.cpp, cmwc4096.h, command_line.cpp,
+	  command_line.h, crccalc.cpp, crccalc.h, fixed.h, kissrng.cpp,
+	  kissrng.h, maze.cpp, maze.h, maze_recursive.cpp,
+	  maze_recursive.h, maze_renderer.cpp, maze_renderer.h,
+	  mtwister.cpp, mtwister.h, mwc1038.cpp, mwc256.cpp, mwc256.h,
+	  prng.cpp, prng.h, realutil.cpp, realutil.h, sortutil.h,
+	  validator.h: Changed from SFVL to GPL license in source files
+
+2004-01-18 16:24  scott
+
+	* libcoyotl/array.h, libcoyotl/mtwister.cpp, libcoyotl/mtwister.h,
+	  test/test_prng.cpp: Implementing and testing template
+	  metaprogramming
+
+2004-01-15 19:59  scott
+
+	* libcoyotl/Makefile.am: Set CXXFLAGS = -O3 Removed unwanted
+	  definitions
+
+2004-01-15 18:43  scott
+
+	* COPYING, ChangeLog, Makefile.am, configure.ac: Refined
+	  configuration and build
+
+2004-01-15 14:54  scott
+
+	* stamp-h.in: Removed spurious file
+
+2004-01-15 14:53  scott
+
+	* LICENSE.COMMERCIAL, LICENSE.GPL, LICENSE.POLICY: Added license
+	  files
+
+2004-01-15 14:26  scott
+
+	* AUTHORS, NEWS, README: Updated test files
+
+2004-01-15 14:04  scott
+
+	* .in, AUTHORS, ChangeLog, INSTALL, Makefile.am, NEWS, README,
+	  config.guess, config.sub, configure.ac, install-sh,
+	  libcoyotl.pc.in, ltmain.sh, missing, mkinstalldirs, reconf,
+	  stamp-h.in, doc/libcoyote.doxygen, doc/libcoyote_footer.html,
+	  doc/libcoyote_header.html, libcoyotl/Makefile.am,
+	  libcoyotl/array.h, libcoyotl/cmwc4096.cpp, libcoyotl/cmwc4096.h,
+	  libcoyotl/command_line.cpp, libcoyotl/command_line.h,
+	  libcoyotl/crccalc.cpp, libcoyotl/crccalc.h, libcoyotl/fixed.h,
+	  libcoyotl/kissrng.cpp, libcoyotl/kissrng.h, libcoyotl/maze.cpp,
+	  libcoyotl/maze.h, libcoyotl/maze_recursive.cpp,
+	  libcoyotl/maze_recursive.h, libcoyotl/maze_renderer.cpp,
+	  libcoyotl/maze_renderer.h, libcoyotl/mtwister.cpp,
+	  libcoyotl/mtwister.h, libcoyotl/mwc1038.cpp, libcoyotl/mwc1038.h,
+	  libcoyotl/mwc256.cpp, libcoyotl/mwc256.h, libcoyotl/prng.cpp,
+	  libcoyotl/prng.h, libcoyotl/realutil.cpp, libcoyotl/realutil.h,
+	  libcoyotl/sortutil.h, libcoyotl/validator.h, test/Makefile.am,
+	  test/test_maze.cpp, test/test_prng.cpp: Initial import
+
+2004-01-15 14:04  scott
+
+	* .in, AUTHORS, ChangeLog, INSTALL, Makefile.am, NEWS, README,
+	  config.guess, config.sub, configure.ac, install-sh,
+	  libcoyotl.pc.in, ltmain.sh, missing, mkinstalldirs, reconf,
+	  stamp-h.in, doc/libcoyote.doxygen, doc/libcoyote_footer.html,
+	  doc/libcoyote_header.html, libcoyotl/Makefile.am,
+	  libcoyotl/array.h, libcoyotl/cmwc4096.cpp, libcoyotl/cmwc4096.h,
+	  libcoyotl/command_line.cpp, libcoyotl/command_line.h,
+	  libcoyotl/crccalc.cpp, libcoyotl/crccalc.h, libcoyotl/fixed.h,
+	  libcoyotl/kissrng.cpp, libcoyotl/kissrng.h, libcoyotl/maze.cpp,
+	  libcoyotl/maze.h, libcoyotl/maze_recursive.cpp,
+	  libcoyotl/maze_recursive.h, libcoyotl/maze_renderer.cpp,
+	  libcoyotl/maze_renderer.h, libcoyotl/mtwister.cpp,
+	  libcoyotl/mtwister.h, libcoyotl/mwc1038.cpp, libcoyotl/mwc1038.h,
+	  libcoyotl/mwc256.cpp, libcoyotl/mwc256.h, libcoyotl/prng.cpp,
+	  libcoyotl/prng.h, libcoyotl/realutil.cpp, libcoyotl/realutil.h,
+	  libcoyotl/sortutil.h, libcoyotl/validator.h, test/Makefile.am,
+	  test/test_maze.cpp, test/test_prng.cpp: Initial revision
+

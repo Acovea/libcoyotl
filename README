@@ -1,0 +1,47 @@
+-----------------------------------------------------------------
+coyotl  
+
+A collection of portable C++ classes
+-----------------------------------------------------------------
+
+  version 3.1, released 10 November 2005
+
+  homepage: http://www.coyotegulch.com/products/coyotl/index.html
+   contact: scott.ladd@coyotegulch.com
+
+  Copyright 1990, 1994, 2000, 2004, 2005 Scott Robert Ladd.
+  All rights reserved.
+            
+-----------------------------------------------------------------
+
+The libcoyotl class collection defies clear categorization; in essence,
+these are tool that I've found useful in a variety of applications.
+Rather than have several "little" libraries lying about, I decided to
+create a single "catch all" library.
+
+Among the algorithms included:
+
+    - A polymorphic collections of the best psuedorandom number
+      generators, including the Mersenne Twister and Marsaglia's
+      favorites.
+      
+    - Utilities for working with real numbers, including additional
+      functions for trigonometry, least common multiple, greatest
+      common denominator, rounding, and other purposes.
+      
+    - A simple cross-platform command-line parser.
+    
+    - A framework for generating random rectangular mazes.
+    
+    - A template for fixed-point math based on different integer sizes
+      and decimal point locations.
+      
+    - Templatized sorting utilities (designed before Std. C++'s
+      <algorithms>, but still useful)
+    
+    - Validation tools for "Design by Contract" programming.
+    
+Complete API documentation can be generated with a simple "make docs"
+command. The test subdirectory contains a basic validation and test
+suite; you can review this code to see how things work.
+    

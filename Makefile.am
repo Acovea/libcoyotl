@@ -1,0 +1,9 @@
+SUBDIRS = libcoyotl test $(DOC_DIR)
+
+EXTRA_DIST = LICENSE.GPL LICENSE.POLICY LICENSE.NON-FREE reconf
+
+if HAVE_DOXYGEN
+DOC_DIR = docs
+else
+DOC_DIR =
+endif
