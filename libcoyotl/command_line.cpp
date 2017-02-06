@@ -31,7 +31,11 @@
 //  
 //-----------------------------------------------------------------------
 
+#include <cstdio>
+#include <cstring>
+
 #include "command_line.h"
+
 using namespace libcoyotl;
 
 command_line::command_line(int argc, char * argv[], const set<string> & bool_opts)
