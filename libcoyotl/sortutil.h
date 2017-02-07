@@ -129,14 +129,15 @@ namespace libcoyotl
             }
         }
     }
-    
+#define CHAR_BIT     8
+#define STACK_SIZE  (CHAR_BIT * sizeof(int))
+#define THRESHOLD   7
     //--------------------------------------------------
     // Quick Sort an array in ascending order
     template <class T>
     void quick_sort(T * array, size_t n)
     {
-        static const size_t STACK_SIZE = CHAR_BIT * sizeof(int);
-        static const size_t THRESHOLD  = 7;
+
 
         size_t left_index  = 0;
         size_t right_index = n - 1;
